@@ -5,13 +5,13 @@
     {% include header.html %}
   </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
     {% include nav/main.html %}
 
     <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content" tabindex="-1">
+    <div class="bs-docs-header" id="content">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
@@ -22,12 +22,11 @@
     <div class="container bs-docs-container">
 
       <div class="row">
-        <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
+        <div class="col-md-9" role="main">
           {{ content }}
         </div>
-        {% unless page.fullwidth == true %}
-        <div class="col-md-3" role="complementary">
-          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+        <div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
             <ul class="nav bs-docs-sidenav">
               {% if page.slug == "getting-started" %}
                 {% include nav/getting-started.html %}
@@ -53,9 +52,8 @@
               Preview theme
             </a>
             {% endif %}
-          </nav>
+          </div>
         </div>
-        {% endunless %}
       </div>
     </div>
 

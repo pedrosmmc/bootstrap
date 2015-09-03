@@ -3,15 +3,10 @@
   description: Bootstrap 中文文档
   url: http://v3.bootcss.com/
 
-- name: Danish
-  code: da
-  description: Bootstrap på Dansk
-  url: http://getbootstrap.dk/
-
 - name: French
   code: fr
   description: Bootstrap en Français
-  url: http://www.oneskyapp.com/fr/docs/bootstrap/getting-started/
+  url: http://www.oneskyapp.com/docs/bootstrap/fr
 
 - name: German
   code: de
@@ -31,19 +26,14 @@
 - name: Russian
   code: ru
   description: Bootstrap по-русски
-  url: http://www.oneskyapp.com/ru/docs/bootstrap/
+  url: http://www.oneskyapp.com/docs/bootstrap/ru
 
 - name: Spanish
   code: es
   description: Bootstrap en Español
-  url: http://www.oneskyapp.com/es/docs/bootstrap/
+  url: http://www.oneskyapp.com/docs/bootstrap/es
 
 - name: Ukrainian
   code: uk
   description: Bootstrap українською
   url: http://twbs.docs.org.ua
-
-- name: Vietnamese
-  code: vi
-  description: Bootstrap bằng tiếng Việt
-  url: http://getbootstrap.com.vn
